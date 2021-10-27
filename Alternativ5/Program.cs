@@ -34,7 +34,7 @@ namespace Alternativ5
             DirectoryInfo di = Directory.CreateDirectory($"C:/ProgramData/Stuff{i}");
             di.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
 
-            MakeDir($"C:/ProgramData/Stuff{i}", 0, 20);
+            MakeDir($"C:/ProgramData/Stuff{i}", 0, 10);
         }
 
         static void MakeDir(string path, int depth, int maxdepth)
